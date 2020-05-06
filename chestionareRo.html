@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="chestionareRo.css" />
+</head>
+
+<title>
+    Driver Master
+</title>
+<link rel="icon" href="title_icon.jpg" type="image/x-icon">
+
+<body>
+    <header>
+        <div class="logo">
+            <form class="display" action="LogedIn.html" method="post">
+                <button type="submit" style="width: auto;"></button>
+            </form>
+        </div>
+        <div class="day-nigth">
+            <button onclick="myFunction()"></button></div>
+        <div class="w3-dropdown-hover">
+            <button type="button">Country</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border">
+                <a href="Romania.html" class="w3-bar-item w3-button">Romania</a>
+                <a href="#" class="w3-bar-item w3-button">United Kingdom</a>
+                <a href="#" class="w3-bar-item w3-button">Itali</a>
+                <a href="#" class="w3-bar-item w3-button">France</a>
+                <a href="#" class="w3-bar-item w3-button">Korea</a>
+                <a href="#" class="w3-bar-item w3-button">United States</a>
+                <a href="#" class="w3-bar-item w3-button">Japan</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover">
+            <button type="button">ENG/RO</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border">
+                <a href="#" class="w3-bar-item w3-button">RO</a>
+                <a href="#" class="w3-bar-item w3-button">ENG</a>
+            </div>
+        </div>
+        <div>
+            <button style="width:auto;">Contact </button></div>
+        <button onclick="document.getElementById('profile').style.display='block'" style="width:auto;">Profile</button>
+        <script>
+            // Get the mod
+            var mod = document.getElementById('profile');
+        </script>
+        <div class=logout>
+            <form class="display" action="first_site.html" method="post">
+                <button type="submit" style="width:auto;">LogOut</button>
+            </form>
+        </div>
+    </header>
+    </div>
+    <div class="quizzPage">
+        <div class="Dificulty">
+            <h1>Genereaza<br> un test</h1>
+            <button type="submit">Usor</button>
+            <button type="submit">Mediu</button>
+            <button type="submit">Greu</button>
+            <button type="submit">Expert</button>
+        </div>
+        <div class="quizz">
+            <div class="question">
+                <p>Aici va aparea intrebarea.</p>
+            </div>
+            <div class="answers">
+                <button type="submit">1st option</button>
+                <button type="submit">2st option</button>
+                <button type="submit">3rd option</button>
+                <button type="submit">4th option</button>
+                <div class="skip">
+                    <button type="submit">Skip</button>
+                </div>
+            </div>
+        </div>
+        <div class="curent_test">
+            <h1>Test curent</h1><br>
+            <p>Dificultate</p><br>
+            <p>Intrrebarea 1 din 10 </p><br>
+            <p>Raspunsuri corecte:</p><br>
+            <p>Raspunsuri gresite:</p><br>
+            <p>Curent points:</p><br>
+        </div>
+        <script>
+            function myFunction() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
+
+    </div>
+</body>
+
+</html>

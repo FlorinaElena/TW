@@ -1,0 +1,215 @@
+body {
+    background: url(background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    font-family: Georgia, serif;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+header {
+    padding: 15px 0;
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    width: 100%;
+    text-align: right;
+    display: table;
+}
+
+header div {
+    display: table-cell;
+    display: inline-flex;
+}
+
+header button {
+    display: inline-flex;
+}
+
+button {
+    background-color: rgb(54, 53, 58);
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.w3-dropdown-hover {
+    margin-right: 10px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.quizzPage {
+    display: table;
+    flex-wrap: wrap;
+    display: inline-flex;
+    float: left;
+    text-align: center;
+    width: 100%;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.quizz {
+    border-style: solid;
+    border-width: medium;
+    border-color: rgb(4, 31, 14);
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    margin-top: 40px;
+    width: 50%;
+}
+
+.question {
+    text-align: center;
+    height: 140px;
+    padding-top: 5%;
+    font-size: 24px;
+}
+
+.answers button {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: rgb(61, 126, 99);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.skip button {
+    display: block;
+    width: auto;
+    border: none;
+    background-color: rgb(59, 31, 44);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.Dificulty,
+.curent_test {
+    border-style: solid;
+    border-width: medium;
+    border-color: rgb(4, 31, 14);
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    margin-top: 40px;
+    width: 23%;
+}
+
+.Dificulty button {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: rgb(61, 126, 99);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.dark-mode {
+    background-image: none;
+    color: black;
+    background-color: blanchedalmond;
+}
+
+.dark-mode header button {
+    background-color: rgb(199, 157, 101);
+    color: black;
+}
+
+.dark-mode .answers button,
+.dark-mode .Dificulty button {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: blanchedalmond;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+}
+
+.dark-mode .Dificulty button {
+    margin-top: 30px;
+}
+
+.dark-mode .quizzPage {
+    border-color: rgb(4, 31, 14);
+}
+
+.dark-mode .skip button {
+    background-color: rgb(199, 157, 101);
+    width: auto;
+    padding: 14px 28px;
+    margin-top: 10px;
+}
+
+.day-nigth button {
+    background: url("day_button.jpg") no-repeat center;
+    cursor: pointer;
+    padding: 10px 10px;
+    background-size: 100%;
+    margin-left: 25px;
+}
+
+header .logo {
+    float: left;
+}
+
+.logo button {
+    background: url("logo.png") no-repeat center;
+    cursor: pointer;
+    padding: 50px 50px;
+    background-size: 100%;
+    margin-top: -8px;
+    margin-bottom: -8px;
+    margin-left: 25px;
+}
