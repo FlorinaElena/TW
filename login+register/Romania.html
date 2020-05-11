@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="Romania.css" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<html>
+<title>
+    Driver Master
+</title>
+<link rel="icon" href="title_icon.jpg" type="image/x-icon">
+
+<body>
+    <header>
+        <div class="logo">
+            <form class="display" action="LogedIn.html" method="post">
+                <button type="submit" style="width: auto;"></button>
+            </form>
+        </div>
+        <div class="day-nigth">
+            <button onclick="myFunction1()"></button></div>
+        <div class="w3-dropdown-hover">
+            <button type="button">Country</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border">
+                <a href="Romania.html" class="w3-bar-item w3-button">Romania</a>
+                <a href="#" class="w3-bar-item w3-button">United Kingdom</a>
+                <a href="#" class="w3-bar-item w3-button">Itali</a>
+                <a href="#" class="w3-bar-item w3-button">France</a>
+                <a href="#" class="w3-bar-item w3-button">Korea</a>
+                <a href="#" class="w3-bar-item w3-button">United States</a>
+                <a href="#" class="w3-bar-item w3-button">Japan</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover">
+            <button type="button">ENG/RO</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border">
+                <a href="#" class="w3-bar-item w3-button">RO</a>
+                <a href="#" class="w3-bar-item w3-button">ENG</a>
+            </div>
+        </div>
+        <div>
+            <button style="width:auto;">Contact </button></div>
+        <div class=logout>
+            <form class="display" action="first_site.html" method="post">
+                <button type="submit" style="width:auto;">LogOut</button>
+            </form>
+        </div>
+    </header>
+    <div class="signs_rules_tests">
+        <div>
+            <a href="chestionareRo.html">
+                <img src="chestionarRo.png" alt="Chestionar auto" width="120" height="120"><br>
+                <p>Chestionare</p>
+            </a>
+        </div>
+        <div>
+            <a href="semneRO.html">
+                <img src="signsRo.png" alt="Semne de circulatie" width="120" height="120"><br>
+                <p>Semne de<br> circulatie</p>
+            </a>
+        </div>
+        <div>
+            <a href="legislatieRo.html">
+                <img src="legislatieRO.png" alt="Legislatia rutiera" width="120" height="120"><br>
+                <p>Legislatie<br> rutiera</p>
+            </a>
+        </div>
+        <div>
+            <a href="conduita_preventiva.html">
+                <img src="conduita_preventiva.png" alt="Conduita preventiva" width="120" height="120"><br>
+                <p>Conduita<br> preventiva</p>
+            </a>
+        </div>
+    </div>
+    <script>
+        function myFunction1() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+
+</html>

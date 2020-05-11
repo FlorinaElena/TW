@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="semneRO.css" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<html>
+<title>
+    Driver Master
+</title>
+<link rel="icon" href="title_icon.jpg" type="image/x-icon">
+
+<header>
+    <div class="logo">
+        <form class="display" action="LogedIn.html" method="post">
+            <button type="submit" style="width: auto;"></button>
+        </form>
+    </div>
+    <div class="day-nigth">
+        <button onclick="myFunction()"></button></div>
+    <div class="w3-dropdown-hover">
+        <button type="button">Country</button>
+        <div class="w3-dropdown-content w3-bar-block w3-border">
+            <a href="Romania.html" class="w3-bar-item w3-button">Romania</a>
+            <a href="#" class="w3-bar-item w3-button">United Kingdom</a>
+            <a href="#" class="w3-bar-item w3-button">Itali</a>
+            <a href="#" class="w3-bar-item w3-button">France</a>
+            <a href="#" class="w3-bar-item w3-button">Korea</a>
+            <a href="#" class="w3-bar-item w3-button">United States</a>
+            <a href="#" class="w3-bar-item w3-button">Japan</a>
+        </div>
+    </div>
+    <div class="w3-dropdown-hover">
+        <button type="button">ENG/RO</button>
+        <div class="w3-dropdown-content w3-bar-block w3-border">
+            <a href="#" class="w3-bar-item w3-button">RO</a>
+            <a href="#" class="w3-bar-item w3-button">ENG</a>
+        </div>
+    </div>
+    <div>
+        <button style="width:auto;">Contact </button></div>
+    <button onclick="document.getElementById('profile').style.display='block'" style="width:auto;">Profile</button>
+
+    <div id="profile" class="mod">
+        <div class="profile">
+            <form class="display" action="/action_page.php" method="post">
+                <div class="container">
+
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Enter Your Name" name="name" required>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit">Signin</button>
+                </div>
+        </div>
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('profile').style.display='none'" class="cancelbtn">Cancel</button>
+        </div>
+        </form>
+    </div>
+    </div>
+    <script>
+        // Get the mod
+        var mod = document.getElementById('profile');
+    </script>
+    <div class=logout>
+        <form class="display" action="first_site.html" method="post">
+            <button type="submit" style="width:auto;">LogOut</button>
+        </form>
+    </div>
+</header>
+
+<body>
+    <div class="category">
+        <div class="type">
+            <button onclick="DisplaySignsW()" onclick="document.getElementById('warning_signs').style.display='block'">Warning signs</button>
+            <button onclick="DisplaySignsP()" onclick="document.getElementById('priority_signs').style.display='block'">Priority signs</button>
+            <button onclick="DisplaySignsPR()" onclick="document.getElementById('prohibitory_signs').style.display='block'">Prohibitory signs</button>
+            <button onclick="DisplaySignsM()" onclick="document.getElementById('mandatory_signs').style.display='block'">Mandatory signs</button>
+            <button onclick="DisplaySignsI()" onclick="document.getElementById('information_signs').style.display='block'">Information signs</button>
+        </div>
+        <div class="signs" id="warning_signs">
+            <div class="warning_signs">
+
+
+                <img id="myImg" src="warning-accident.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-aircraft.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-animal-cattle.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-animal-deer.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-bridge.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-bump.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-bumps.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-children.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-crossroad-give-way.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-crossroad-roundabout.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-crossroad-side-roads.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-crossroad-stop.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-crossroad.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-crosswind.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-curve-left-right.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-curve-left.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-curve-right-left.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-curve-right.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-cyclist.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-falling-rocks.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-loose-chippings.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-pedestrian-crossing.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-loose-chippings.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-quayside.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-road-narrowing-left.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-road-narrowing-right.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-road-narrowing.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-roadworks.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-slippery-road.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-soft-verge.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-steep-ascent.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-steep-descent.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-tractor.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-traffic-lights.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-traffic-que.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-train-crossing-barriers.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-train-crossing.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-train-rail.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-train-rails.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-tram.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-two-way-traffic.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-tunnel.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img">
+                    <div id="caption"></div>
+                </div>
+            </div>
+        </div>
+        <div class="signs" id="priority_signs">
+            <div class="priority_signs">
+                <img id="myImg" src="priority-crossroad-give-way.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="priority-crossroad-side-roads.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="priority-crossroad.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="priority-road-curve.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="priority_information-road-narrowing.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="priority-road-narrowing.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="priority-road-curve_v1.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="priority-priority-road_end.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="priority-priority-road.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="priority-crossroad-stop.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-accident.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="warning-accident.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+            </div>
+        </div>
+        <div class="signs" id="prohibitory_signs">
+            <div class="prohibitory_signs">
+                <img id="myImg" src="prohibitory_signs/prohibited-access-bus.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-access-car.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-access-cyclist.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-access-entry.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-access-handcart.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-access-bus.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-access-horse-cart.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-access-moped.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-access-motorcycle-car-horse-cart.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-access-motorcycle-car.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-access-motorcycle.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-access-pedestrian.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-access-tractor.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-access-truck-trailer.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-access-truck.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-access.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-action-distance.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-action-horn.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-action-overtaking-truck.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-action-overtaking.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-action-overtaking_end.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-action-speed-zone.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-action-speed-zone_end.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-action-speed.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-action-speed_end.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-action-turn-left.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-action-turn-right.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-action-turn-u.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-cargo-dangerous.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-cargo-explosive.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-cargo-height.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-cargo-length.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-cargo-polluted.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-cargo-weight-axle.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-cargo-weight-truck.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-cargo-weight.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-cargo-width.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-entry-checkpoint.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-parking-alternate-even.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-parking-stopping.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-parking-zone_end.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-parking.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+                <img id="myImg" src="prohibitory_signs/prohibited-road-narrowing.png" alt="Warning for accidents" width="10%" height="10%" margin-left="3px">
+            </div>
+        </div>
+        <div class="signs" id="mandatory_signs">
+            <div class="mandatory_signs">
+                <img id="myImg" src="mandatory_signs/mandatory-direction-ahead-turn-right.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="mandatory_signs/mandatory-direction-pass-left-right.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="mandatory_signs/mandatory-direction-roundabout.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="mandatory_signs/mandatory-directions-right-up.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="mandatory_signs/mandatory-direction-up.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="mandatory_signs/mandatory-lane-bus.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="mandatory_signs/mandatory-lane-cyclist.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="mandatory_signs/mandatory-lane-dual-pedestrian-cyclist.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="mandatory_signs/mandatory-lane-dual-pedestrian-cyclist_v1.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="mandatory_signs/mandatory-lane-pedestrian-cyclist.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="mandatory_signs/mandatory-lane-pedestrian.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="mandatory_signs/mandatory-snow-chains.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="mandatory_signs/mandatory-speed-minimum.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="mandatory_signs/mandatory-speed-minimum_end.png" alt="Warning for accidents" width="10%" height="10%">
+            </div>
+        </div>
+        <div class="signs" id="information_signs">
+            <div class="information_signs">
+                <img id="myImg" src="information_signs/information-built-up-area.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-built-up-area_end.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-crossing-pedestrian.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-detour (1).png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-detour.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-direction-sign-roundabout.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-expressway.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-expressway_end.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-lane-direction.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-lane-end.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-motorway.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-motorway_end.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-one-way-traffic.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-parking.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-pedestrian-zone.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-pedestrian-zone_end.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-prescribed-direction.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-priority-road.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-priority-road_end.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-priority-road_end.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-residential-area.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-residential-area_end.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-road-curve.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-road-curve_v1.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-road-narrowing.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-section-control.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-speed-national.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-speed-recommended.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-tunnel.png" alt="Warning for accidents" width="10%" height="10%">
+                <img id="myImg" src="information_signs/information-tunnel_end.png" alt="Warning for accidents" width="10%" height="10%">
+            </div>
+        </div>
+        <script>
+            function DisplaySignsI() {
+                var x = document.getElementById("information_signs");
+
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
+        <script>
+            function DisplaySignsPR() {
+                var x = document.getElementById("prohibitory_signs");
+
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
+        <script>
+            function DisplaySignsM() {
+                var x = document.getElementById("mandatory_signs");
+
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
+        <script>
+            function DisplaySignsW() {
+                var x = document.getElementById("warning_signs");
+
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
+        <script>
+            function DisplaySignsP() {
+                var y = document.getElementById("priority_signs");
+                if (y.style.display === "none") {
+                    y.style.display = "block";
+                } else {
+                    y.style.display = "none";
+                }
+            }
+        </script>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg");
+            var modalImg = document.getElementById("img");
+            var captionText = document.getElementById("caption");
+            img.onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+        </script>
+        <script>
+            function myFunction() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
+    </div>
+</body>
+
+</html>
