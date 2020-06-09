@@ -1,0 +1,99 @@
+body {
+    color: rgb(255, 255, 255);
+    font-family: Georgia, serif;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    background: url(background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header {
+    padding: 15px 0;
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    width: 100%;
+    text-align: right;
+    display: table;
+}
+
+header div {
+    display: table-cell;
+    display: inline-flex;
+}
+
+button {
+    background-color: rgb(54, 53, 58);
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-right: 10px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.signs_rules_tests {
+    padding-top: 10px;
+    padding-left: 10px;
+    display: table;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 90%;
+}
+
+.signs_rules_tests div {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-flex;
+    margin-left: 150px;
+    float: left;
+    margin-top: 50px;
+}
+
+.signs_rules_tests div a p {
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    color: aqua;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+header .logo {
+    float: left;
+}
+
+.logo button {
+    background: url("logo.png") no-repeat center;
+    cursor: pointer;
+    padding: 50px 50px;
+    background-size: 100%;
+    margin-top: -8px;
+    margin-bottom: -8px;
+    margin-left: 25px;
+}
