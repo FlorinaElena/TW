@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="Raport.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Raport tehnic</h1>
+    </header>
+    <div class="titlu">
+        <h1>Proiect categoria B - TraST</h1>
+    </div>
+    <div class="capitol">
+        <div>
+            <a href="#tema">1.Introducere</a>
+        </div>
+        <div>
+            <a href="#structura">2.Structura</a></div>
+        <div>
+            <div class="subcapitol">
+                <div>
+                    <a href="#login">2.1.LogIn</a></div>
+                <div>
+                    <a href="#home">2.2.Home</a></div>
+                <div>
+                    <a href="#index">2.3.Chestionare</a></div>
+                <div>
+                    <a href="#sign">2.4.Indicatoare</a></div>
+                <div>
+                    <a href="#legislatie">2.5.Legislatia Rutiera</a></div>
+                <div>
+                    <a href="#conduita">2.6.Conduita Preventiva</a></div>
+            </div>
+            <div>
+                <a href="#proiectare">3.Procesul de constructie</a></div>
+            <div class="subcapitol">
+                <div>
+                    <a href="#schita">3.1.Schitare</a></div>
+                <div>
+                    <a href="#implementare">3.2.Implementare</a></div>
+            </div>
+            <a href="#bug">4.Bug-uri si lipsuri</a>
+            <div>
+                <a href="#bibliografie">5.Bibliografie</a></div>
+        </div>
+    </div>
+    <h2>Autori: </h2>
+    <ul>
+        <li>Smoc Florina Elena (predominant frontend)</li>
+        <li>Letos Eliza Ioana (predominant backend)</li>
+        <li>Gîrbea Andrei Dumitru (backend)</li>
+    </ul>
+
+    <div class="content">
+        <h2 id="tema">1.Introducere</h2>
+        <p>
+            Driver master este o aplicatie web ce ofera suport pentru invatarea semnelor rutiere si a regulilor de circulatie din Romania, de asemenea ofera si sfaturi pentru circulatia in alte tari europene. Pentru fiecare semn se pun la dispozitie informatii cu
+            privire la semnificatie, aspect si categorie. De asemenea se poate consulta atat legislatia cat si conduita preventiva, oferite sub forma de capitole.<br>Sistemul va monitoriza progresul inregistrat de fiecare utilizator in procesul
+            de invatare, in urma rezolvarii unui set de teste, structurat pe niveluri de dificultate: usor, mediu si greu.
+        </p>
+        <h2 id="structura">
+            2.Structura
+        </h2>
+        <p>Aplicatia web cuprinde urmatoarele pagini:</p>
+        <h3 id="login">
+            2.1.LogIn</h3>
+        <p>Smoc Florina Elena si Letos Eliza Ioana</p>
+        <p>Inceput: Martie; Terminat: Aprilie</p>
+
+        <p>Aceasta pagina are rolul atat de a configura contul unui utilizitor cat si de a-l conecta la aplicatie.<br>Nume: login.php<br>Continut:
+            <ul>
+                <li>Header: Contact -afiseaza datele de contact ale site-ului.
+                    <li>Body:
+                        <ul>
+                            <li>Background: bodybkg1.jpg(realizat in photoshop)</li>
+                            <li>LogIn:
+                                <ul>
+                                    <li>conecteaza utilizatorul prin introducerea username-ului si a parolei;</li>
+                                    <li>conectarea se realizeaza cu ajutorul paginii server.php care va face conectarea la baza de date;</li>
+                                    <li>in cazul in care username-ul nu se potriveste cu parola, utilizatorul este inexistent se va apela pagina login_error.php care va semnala o eroare;</li>
+                                    <li>in cazul in care utilizatorul vrea sa isi schimbe parola/parola a fost uitata, i se ofera obtiunea de a o reseta, actiune ce va solicita pagina reset_pass.php.</li>
+                                </ul>
+                            </li>
+                            <li>SignIn: pentru a configura un cont sunt solicitate urmatoarele completarea urmatoarelor campuri:
+                                <ul>
+                                    <li>username(va fi unic);</li>
+                                    <li>e-mail;</li>
+                                    <li>parola;</li>
+                                    <li>confirmare parola;</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+            </ul>
+        </p>
+        <h3 id="home">2.2.Home</h3>
+        <p>Smoc Florina Elena si Letos Eliza Ioana</p>
+        <p>Inceput: Martie; Terminat: Iunie</p>
+        <p>
+            <ul>
+                <li>
+                    Header(urmatoarele pagini vor contine acelasi header):
+                    <ul>
+                        <li>Buton logo: redirectioneaza pe pagina home;</li>
+                        <li>Buton dark-light: ofera o versiune intunecata si una luminoasa a paginii;</li>
+                        <li>Buton contact: ofera detaliile de contact ale paginii;</li>
+                        <li>Buton profil: afiseza username-ul si cate un grafic ce cuprinde progresul in urma rezolvarii testelor, fiecare grafic fiind asociat unei categorii de dificultate;</li>
+                        <li>Buton logout: deconecteaza utilizatorul.</li>
+                    </ul>
+
+                </li>
+                <li>Body:
+                    <ul>
+                        <li>Icon-Romania extinde o sectiune ce contine: icon-chestionare(index.php), icon-semne de circulatie(semneRo.php), icon-legislatia rutiera(legislatieRo.php), icon-conduita preventiva(conduita_preventiva.php);</li>
+                        <li>Icon-Glob extinde o sectiune ce contine: reguli de circulatie din cele mai cunoscute tari din Europa; categorii cu diferente de culoare a indicatoarelor; categorii de limita de viteza.</li>
+                    </ul>
+                </li>
+            </ul>
+        </p>
+        <h3 id="index">2.3.Chestionare</h3>
+        <p>Smoc Florina Elena si Letos Eliza Ioana si Gîrbea Andrei Dumitru</p>
+        <p>Inceput: Aprilie; Terminat: Iunie</p>
+        <p>
+            <ul>
+                <li>Body:
+                    <ul>
+                        <li>
+                            Caseta pentru generare test (genereaza un test in functie de nivelul de dificultate ales);
+                        </li>
+                        <li>
+                            Caseta pentru afisarea intrebarilor si a variantelor de raspuns, de asemenea contine si un buton de submit;
+                        </li>
+                        <li>
+                            Caseta ce afiseaza numarul intrebarii curente cat si numarul total de intrebari(10).
+                        </li>
+                    </ul>
+                </li>
+                <li>Dupa terminarea testului se va afisa, in caseta din centrul, scorul obtinut si obtiunea de a reface testul.</li>
+        </p>
+        </ul>
+        <h3 id="sign">2.4.Indicatoare</h3>
+        <p>Smoc Florina Elena si Letos Eliza Ioana</p>
+        <p>Inceput: Aprilie; Terminat: Iunie</p>
+        <p>
+            <ul>
+                <li>Body -cuprinde butoanele:
+                    <ul>
+                        <li>
+                            Indicatoare de avertizare;
+                        </li>
+                        <li>
+                            Indicatoare de prioritate;
+                        </li>
+                        <li>
+                            Indicatoare de interdictie sau restrictie;
+                        </li>
+                        <li>
+                            Indicatoare de obligare;
+                        </li>
+                        <li>
+                            Indicatoare de informare.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Butoanele extind/inchid casete ce contin indicatoare ce apartin categoriei specifice.
+                </li>
+            </ul>
+        </p>
+        <h3 id="legislatie">2.5.Legislatie rutiera</h3>
+        <p>Smoc Florina Elena</p>
+        <p>Inceput: Martie; Terminat: Aprilie</p>
+        <p>
+            <ul>
+                <li>Contine codul rutier sectionat pe capitole extensibile.</li>
+            </ul>
+        </p>
+        <h3 id="conduita">2.6.Conduita preventiva</h3>
+        <p>Smoc Florina Elena</p>
+        <p>Inceput: Aprilie; Terminat: Mai</p>
+        <p>
+            <ul>
+                <li>Contine normele pentru o atitudine adecvata in trafic pe capitole extensibile.</li>
+            </ul>
+        </p>
+        <h2 id="proiectare">3.Procesul de constructie</h2>
+        <h3 id="schita">3.1.Schitare</h3>
+        <p>
+            <ul>
+                <li>Fiecare cerinta a fost mai intai schitata ca mai apoi sa se realizeze imagini model pentru produsul final, dupa care au fost impartite sarcini fiecarui membru al echipei.</li>
+            </ul>
+        </p>
+        <h3 id="implementare">3.2.Implementarea</h3>
+        <p>
+            <ul>
+                <li>PHP</li>
+                <p>Este utilizat pentru conectarea la baza de date, preluarea/inserarea informatiilor din/in tabele, crearea mecanismului de selectare a raspunsului corect, de selectare a numarului intrebarii curente din cadrul testului, de selectare a utilizatorului
+                    conectat in sesiunea curenta, de creare a graficelor ce retin progresul utilizatorului. </p>
+                <li>
+                    JavaScript
+                </li>
+                <p>
+                    Este utilizat pentru a extinde sectiuni si pentru a afisa imagini la o dimensiune mai mare cat si pentru a deschide anumite sectiuni cu informatii sub forma unor mini-ferestre.
+                </p>
+                <li>
+                    CSS
+                </li>
+                <p>Este utilizat pentru design-ul aplicatiei:
+                    <ul>
+                        <li>
+                            ajustarea dimensiunii textului/imaginilor;
+                        </li>
+                        <li>
+                            asezarea continutului;
+                        </li>
+                        <li>
+                            adaugarea de imagini/fonturi pentru background si diverse elemente;
+                        </li>
+                        <li>
+                            creearea unor campuri/mini-ferestea;
+                        </li>
+                    </ul>
+                </p>
+                <li>HTML</li>
+                <p>Elementele HTML sunt utilizate pentru crearea tuturor componentelor aplicatiei.</p>
+                <li>Baza de date</li>
+                <p>Este utilizata pentru stocarea informatiilor despre utilizator (id, username, e-mail, password, punctaj); intrebarile si raspunsurile testelor.</p>
+            </ul>
+        </p>
+        <h2 id="bug">4.Bug-uri si lipsuri</h2>
+        <ul>
+            <p>Bug:</p>
+            <li>
+                La profil nu se actualizeaza imediat graficul in urma rezolvarii unui test ci se actualizeaza la conectarea urmatoare.
+            </li>
+            <p>Lipsa:</p>
+            <li>Clasament</li>
+        </ul>
+        <h2 id="bibliografie">5.Bibliografie</h2>
+        <ul>
+            <li>https://www.w3schools.com/</li>
+            <li>https://www.php.net/manual/ro/intro-whatis.php</li>
+            <li>https://css-tricks.com/?fbclid=IwAR24M7BmcG_zPJ-xshnQI7_gB4Qkbzg0LCKzsB0ypUelzus-haNPLT66kyk</li>
+            <li>https://traffic-rules.com/en/romania</li>
+            <li>https://www.scoalarutiera.ro/curs-legislatie/conducerea-preventiva</li>
+            <li>https://www.wikiwand.com/en/Comparison_of_European_road_signs</li>
+            <li>http://www.euroavocatura.ro/print2.php?print2=lege&idItem=1344</li>
+        </ul>
+    </div>
+</body>
+
+</html>

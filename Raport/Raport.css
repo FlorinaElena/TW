@@ -1,0 +1,37 @@
+header {
+    text-align: center;
+    background-color: rgba(122, 22, 22, 0.74);
+    width: 300px;
+    height: 100px;
+    margin-left: 30%;
+    color: seashell;
+    padding-top: 25px;
+}
+
+header p {
+    text-size-adjust: 20px;
+}
+
+.subcapitol {
+    margin-left: 40px;
+}
+
+.capitolGhid {
+    margin-left: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.capitol {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+body {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.titlu {
+    margin-top: 50px;
+}
